@@ -1,0 +1,176 @@
+body {
+    display: block;
+    text-align: center;
+    background-color: lightslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #2b4074;
+    margin: 20px auto 10px;
+    font-size: 3em;
+}
+
+.tasksList ul{
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tasksList li {
+    margin-left: 50px;
+}
+
+#square {
+    margin: 20px auto 10px;
+    width: 100px;
+    height: 100px;
+    visibility: initial;
+    background-color: black;
+}
+
+.button {
+    display: inline;
+}
+
+button {
+    width: 200px;
+    height: 43px;
+    margin: 20px auto 10px;
+}
+
+.push:hover {
+    border: 2px solid #2b4074;
+    background-color: #2b4074;
+    color: white;
+}
+
+a {
+    margin: 20px auto 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 2em;
+}
+
+a:hover {
+    color: red;
+}
+
+a::after {
+    color: white;
+}
+
+.square {
+    display:inline-block;
+    margin: 20px auto 10px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#yellowSquare {
+    display: block;
+    background-color: yellow;
+}
+
+#redSquare{
+    display: block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+#greenSquare{
+    display: block;
+    background-color: green;
+    width: 50px;
+    height: 20px;
+    visibility: hidden;
+}
+
+#divImage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.task10, .task14, .task16{
+    position: absolute;
+    width: 100%;
+    height: 1900px;
+}
+
+.task10 a{
+    margin: auto;
+}
+
+#mouseCoord{
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#userData{
+    position: absolute;
+    top:5px;
+    left: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.editor {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#showScroll{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+#blockOutside{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 4px;
+    margin: auto;
+}
+
+#blockInside {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius: 4px;
+    margin: 100px;
+}
+
+.task16 .push{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#blockHidden{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 10;
+    background-color: grey;
+    opacity: 0.5;
+}
