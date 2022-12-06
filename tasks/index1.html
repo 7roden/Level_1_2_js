@@ -12,7 +12,18 @@
 
 <body class="task1">
     <h1 class="title">TASK 1</h1>
-    <div class="hidden" id="square"></div>
+    <p class="condition">Создать на странице div, указать ему id, сделать ему такие стили,
+        чтоб он выглядел как черный квадрат 100х100 пх. Добавить на страницу кнопку, по клику
+        на эту кнопку блок должен исчезать. Исчезание нужно сделать всеми тремя способами
+        (отдельная кнопка под каждый способ):<br>
+        1. CSS (display: none), т.е. просто навесить стиль на элемент <br>
+        2. JS (удаление элемента) <br>
+        3. CSS+JS (навешивать на элемент класс hidden, а в CSS прописать такие стили чтоб они скрывали всё с классом
+        hidden)
+    </p>
+    <div class="container">
+        <div class="hidden" id="square"></div>
+    </div>
     <div class="button">
         <button class="push push1" onclick="clickbutton1(this)">1. CSS (click for display: none)</button>
         <button class="push push2" onclick="clickbutton2(this)">2. JS (удалить элемент)</button>

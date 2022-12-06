@@ -11,7 +11,7 @@ h1 {
     font-size: 3em;
 }
 
-.tasksList ul{
+.tasksList ul {
     text-align: left;
     list-style-type: none;
     display: flex;
@@ -22,6 +22,10 @@ h1 {
     margin-left: 50px;
 }
 
+.condition {
+    width: 75%;
+    margin: 30px auto 30px;
+}
 #square {
     margin: 20px auto 10px;
     width: 100px;
@@ -31,7 +35,9 @@ h1 {
 }
 
 .button {
-    display: inline;
+    display: flex;
+    width: 900px;
+    margin: auto;
 }
 
 button {
@@ -63,7 +69,7 @@ a::after {
 }
 
 .square {
-    display:inline-block;
+    display: inline-block;
     margin: 20px auto 10px;
     width: 100px;
     height: 100px;
@@ -75,7 +81,7 @@ a::after {
     background-color: yellow;
 }
 
-#redSquare{
+#redSquare {
     display: block;
     background-color: red;
     width: 50px;
@@ -83,7 +89,7 @@ a::after {
     visibility: hidden;
 }
 
-#greenSquare{
+#greenSquare {
     display: block;
     background-color: green;
     width: 50px;
@@ -97,17 +103,19 @@ a::after {
     justify-content: space-around;
 }
 
-.task10, .task14, .task16{
+.task10,
+.task14,
+.task16 {
     position: absolute;
     width: 100%;
     height: 1900px;
 }
 
-.task10 a{
+.task10 a {
     margin: auto;
 }
 
-#mouseCoord{
+#mouseCoord {
     position: fixed;
     top: 5px;
     right: 10px;
@@ -115,9 +123,9 @@ a::after {
     font-size: 1.5em;
 }
 
-#userData{
+#userData {
     position: absolute;
-    top:5px;
+    top: 5px;
     left: 10px;
     font-size: 1.5em;
     text-align: left;
@@ -132,14 +140,14 @@ a::after {
     text-align: left;
 }
 
-#showScroll{
+#showScroll {
     position: fixed;
     bottom: 0;
     right: 0;
     visibility: hidden;
 }
 
-#blockOutside{
+#blockOutside {
     width: 400px;
     height: 400px;
     background-color: white;
@@ -157,13 +165,13 @@ a::after {
     margin: 100px;
 }
 
-.task16 .push{
+.task16 .push {
     position: fixed;
     bottom: 20px;
     right: 10px;
 }
 
-#blockHidden{
+#blockHidden {
     position: absolute;
     top: 0;
     left: 0;
@@ -173,4 +181,33 @@ a::after {
     z-index: 10;
     background-color: grey;
     opacity: 0.5;
+}
+
+.inputForm {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2b4074;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputFile {
+    display: none;
+}
+
+#labelInput {
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+
+.task19 button{
+    display: block;
 }

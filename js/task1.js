@@ -13,12 +13,11 @@ function clickbutton1(elementButton1) {
 }
 
 function clickbutton2(elementButton2) {
-    console.log(elementButton2.innerHTML === '2. JS (удалить элемент)');
     if (elementButton2.innerHTML === '2. JS (удалить элемент)') {
         elementSquare.remove();
         elementButton2.innerHTML = '2. JS (вернуть элемент)';
     } else {
-        elementBody.insertAfter(elementSquare, elementTitle);
+        document.querySelector('.container').appendChild(elementSquare);
         elementButton2.innerHTML = '2. JS (удалить элемент)';
     }
 }
